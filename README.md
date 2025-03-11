@@ -7,5 +7,5 @@ jenkins install git and  start jenkins
 
 nexus server to run nexus as a service  
 - add nexus user
-    group add nexus
+    group add nexus  
     useradd -m -s /bin/bash -g nexus nexus
