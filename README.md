@@ -5,4 +5,7 @@ nexus download  Download nexus-unix-x86-64-3.78.1-02.tar.gz and extract
 jenkins install git and  start jenkins  
 
 
-
+nexus server to run nexus as a service  
+- add nexus user
+    group add nexus
+    useradd -m -s /bin/bash -g nexus nexus
