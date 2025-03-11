@@ -4,9 +4,29 @@ pipeline{
         maven 'maven'
     }
     stages{
-        stage('Build'){
+        stage('clean workspace'){
             steps{
-                sh 'mvn clean package'
+                sh 'mvn clean'
+            }
+        }
+        stage('validate code'){
+            steps{
+                sh 'mvn validate'
+            }
+        }
+        stage('compile code'){
+            steps{
+                sh 'mvn compile'
+            }
+        }
+        stage('test code'){
+            steps{
+                sh 'mvn test'
+            }
+        }
+        stage('package code'){
+            steps{
+                sh 'mvn package'
             }
         }
 

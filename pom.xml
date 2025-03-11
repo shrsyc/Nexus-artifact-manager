@@ -5,7 +5,7 @@
 
   <groupId>demomaven</groupId>
   <artifactId>demoproject</artifactId>
-  <version>2.0.0</version>
+  <version>1.0.0</version>
 
   <name>demoproject</name>
   <!-- FIXME change it to the project's website -->
@@ -32,12 +32,12 @@
     <repository>
         <id>nexus-releases</id>
         <name>maven-releases</name>
-        <url>http://13.201.193.129:8081/repository/maven-releases/</url>
+        <url>http://13.233.108.10:8081/repository/maven-releases/</url>
     </repository>
     <repository>
         <id>nexus-snapshots</id>
         <name>maven-snapshots</name>
-        <url>http://13.201.193.129:8081/repository/maven-snapshots/</url>
+        <url>http://13.233.108.10:8081/repository/maven-snapshots/</url>
     </repository>
   </repositories>
 
@@ -104,11 +104,11 @@
   <distributionManagement>
     <repository>
         <id>nexus-releases</id>
-        <url>http://13.201.193.129:8081/repository/maven-releases/</url>
+        <url>http://13.233.108.10:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
         <id>nexus-snapshots</id>
-        <url>http://13.201.193.129:8081/repository/maven-snapshots/</url>
+        <url>http://13.233.108.10:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
