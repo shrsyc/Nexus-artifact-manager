@@ -10,8 +10,12 @@ nexus server to run nexus as a service
     groupadd nexus  
     useradd -m -s /bin/bash -g nexus nexus
 
-- move files to nexus user  
+- move files to nexus user and make nexus as owner
      mv /root/nexus-3.78.1-02 /home/nexus/nexus  
      mv /root/sonatype-work  /home/nexus  
+     chown -R nexus:nexus /home/nexus/nexus /home/nexus/sonatype-work  
+
+- move fil
+chown -R nexus:nexus /home/nexus/nexus /home/nexus/sonatype-work
 
        
