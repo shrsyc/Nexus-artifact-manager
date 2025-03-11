@@ -6,6 +6,12 @@ jenkins install git and  start jenkins
 
 
 nexus server to run nexus as a service  
-- add nexus user  
+- create nexus and add nexus user 
     groupadd nexus  
     useradd -m -s /bin/bash -g nexus nexus
+
+- move files to nexus user
+     mv /root/nexus-3.78.1-02 /home/nexus/nexus  
+     mv /root/sonatype-work  /home/nexus  
+
+       
